@@ -107,11 +107,11 @@ def main(input):
 	elif com == 'c.sh.shell':
 		sh.sh()
 	elif com == 'sys.sap.mod':
-		web.download(f'{arg[0]}/main.py', f'{dser}distro/{arg[0]}/main.py')
-		web.download(f'{arg[0]}/bash.py', f'{dser}distro/{arg[0]}/bash.py')
-		web.download(f'{arg[0]}/sh.py', f'{dser}distro/{arg[0]}/sh.py')
-		web.download(f'{arg[0]}/webservice.py', f'{dser}distro/{arg[0]}/webservice.py')
-		web.download(f'{arg[0]}/py.py', f'{dser}distro/{arg[0]}/py.py')
+		web.download(f'{arg[0]}/main.py', f'{dser}{arg[0]}/main.py')
+		web.download(f'{arg[0]}/bash.py', f'{dser}{arg[0]}/bash.py')
+		web.download(f'{arg[0]}/sh.py', f'{dser}{arg[0]}/sh.py')
+		web.download(f'{arg[0]}/webservice.py', f'{dser}{arg[0]}/webservice.py')
+		web.download(f'{arg[0]}/py.py', f'{dser}{arg[0]}/py.py')
 	elif com == 's.clr':
 		bash.clr()
 	elif com == 'help':
