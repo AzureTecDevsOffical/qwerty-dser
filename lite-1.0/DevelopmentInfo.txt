@@ -1,0 +1,59 @@
+---------- Lite 1.0 (a.k.a. lite-1.0) Developer Info ----------
+by       : AzureTecDevs 
+copyright: 2024
+
+---------- Note -----------
+This document is designed for the monospace typefont. Using another typefont may cause problems.
+
+--------- Configs ---------
+Configs are variables that can be changed to modify the system.
+For example:
+/------------------------------\
+| #  config                    |
+| uname = 'user123' # Username |
+\------------------------------/
+Could make the username change.
+
+List of config properties for main.py:
+• splitter: splits commands           default: ' !!'
+• help    : help menu                 default: SEE Long Config 01
+List of config properties for bash.py:
+• uname   : username                  default: 'bash'
+• env     : environment               default: 'local'
+• sys     : distro name               default: 'lite-1.0'
+• cur     : cursor text               default: '|>'
+• uinp    : bash prompt               default: f'{uname}:{env}@{sys}{cur}'
+
+Long Config 01:
+f"""-------------------------Help-------------------------
+Screen Library (s):
+	s.out{sdoc}TXT
+	{g('| Output TXT')}
+	
+	s.out.xy{sdoc}TXT{sdoc}X{sdoc}Y
+	{g('| Output TXT at X,Y')}
+	
+	s.out.nl{sdoc}TXT
+	{g('| Output TXT without newline')}
+
+	s.clr
+	{g('| Clear display')}
+	
+Math Library (m):
+	m.eval{sdoc}EXPR
+	{g('| Eval EXPR')}
+	
+	m.rand
+	{g('| Random integer (0-999999)')}
+	
+	m.rand.range{sdoc}MIN{sdoc}MAX
+	{g('| Random integer (MIN-MAX)')}
+
+Code Library (c):
+	c.py.exec{sdoc}CODE
+	{g('| Execute CODE')}
+	
+	c.py.shell
+	{g('| Run python3 shell')}
+	{g('| Librarys: bash, term, time, os, sys, random, termcolor')}"""
+
