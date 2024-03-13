@@ -26,7 +26,7 @@ def bl(txt):
 # Config
 splitter = ' !!' # Split commands	Ex.: print !!123 !!abc
 sdoc = splitter # DO NOT CHANGE
-dser = 'https://' # Download server (MUST have 'def-1.0' directory) (Needs slash	Ex.: example.com/ NOT example.com)
+dser = 'https://raw.githubusercontent.com/AzureTecDevsOffical/qwerty-dser/main/' # Download server (MUST have 'def-1.0' directory) (Needs slash	Ex.: example.com/ NOT example.com)
 help = f"""-------------------------Help-------------------------
 Screen Library (s):
 	s.out{sdoc}TXT
